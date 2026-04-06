@@ -8,8 +8,9 @@ const PORT = 3000;
 import cors from "cors";
 app.use(cors());
 
-// TODO 5: Import and apply Morgan middleware
-
+// Done 5: Import and apply Morgan middleware
+import morgan from "morgan";
+app.use(morgan("dev"));
 
 // TODO 6.1: Create root route "/"
 
