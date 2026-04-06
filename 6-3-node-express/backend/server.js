@@ -12,10 +12,16 @@ app.use(cors());
 import morgan from "morgan";
 app.use(morgan("dev"));
 
-// TODO 6.1: Create root route "/"
+// Done 6.1: Create root route "/"
+app.get("/", (req, res) => {
+  res.send("Welcome!");
+});
 
-
-// TODO 6.2: Create "/api/quote" route
-
+// Done 6.2: Create "/api/quote" route
+import { getRandomQuote } from "./quotes.js";
+app.get("/api/quote", (req, res) => {
+  const quote = getRandomQuote();
+  res.json({ quote });
+});
 
 // TODO 7: Start server using app.listen
