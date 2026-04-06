@@ -1,5 +1,5 @@
 // Import random.js file
-import { getRandomInt } from "./utils/random.js";
+import getRandomInt from "./utils/random.js";
 const quotes = [
   "Q1",
   "Q2",
