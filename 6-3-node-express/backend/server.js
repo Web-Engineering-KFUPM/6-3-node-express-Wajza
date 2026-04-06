@@ -26,5 +26,5 @@ app.get("/api/quote", (req, res) => {
 
 // Done 7: Start server using app.listen
 app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Server: http://localhost:${PORT}`);
 });
